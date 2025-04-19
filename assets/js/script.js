@@ -130,3 +130,31 @@ navigationLinks.forEach(link => {
     });
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const filterButtons = document.querySelectorAll("[data-filter-btn]");
+  const filterItems = document.querySelectorAll("[data-filter-item]");
+
+  filterButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const filter = btn.textContent.trim().toLowerCase();
+
+      // Remove active class from all buttons
+      filterButtons.forEach((b) => b.classList.remove("active"));
+
+      // Add active class to clicked button
+      btn.classList.add("active");
+
+      filterItems.forEach((item) => {
+        const category = item.getAttribute("data-category").toLowerCase();
+
+        if (filter === "all" || category === filter) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+  });
+});
+
+
