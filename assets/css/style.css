@@ -1344,7 +1344,25 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 
+/**
+ * responsive less than 580px screen
+ */
 
+
+ @media (max-width: 579px) {
+  .sidebar {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  .avatar-box img {
+    width: 100px;
+    height: auto;
+    border-radius: 0;
+    display: block;
+    margin: auto;
+  }
+}
 
 
 /**
