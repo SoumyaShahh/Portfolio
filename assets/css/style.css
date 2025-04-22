@@ -2169,3 +2169,28 @@ textarea.form-input::-webkit-resizer { display: none; }
   font-weight: 600;
   border-bottom: 2px solid #00bfff;
 }
+
+@media (max-width: 600px) {
+  .project-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-item {
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  .project-img {
+    height: auto;
+  }
+
+  .project-title,
+  .project-category {
+    text-align: center;
+  }
+
+  .certification .filter-select-box {
+    display: none !important;
+  }
+}
