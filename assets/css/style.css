@@ -1117,6 +1117,22 @@ main {
   font-weight: var(--fw-300);
 }
 
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.tag {
+  background-color: rgba(0, 191, 255, 0.15); /* light blue transparent */
+  color: #00bfff;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
 
 
 
